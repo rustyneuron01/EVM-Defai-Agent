@@ -100,14 +100,20 @@ OPENAI_API_KEY=your-openai-api-key
 ## 📁 Project Structure
 
 ```
-evm-defai-agent/
+EVM-Defai-Agent/
 ├── src/
-│   ├── cli/                 # CLI interface for commands
-│   ├── contracts/           # AI-generated & template smart contracts
-│   ├── services/            # Blockchain + API integrations
-│   └── utils/               # Utilities and helper functions
-├── .env.example             # Environment variable example
-└── README.md
+│   └── lib/
+│       ├── ai/           # ChatGPT integration, prompt handling, and AI-assisted features
+│       ├── alchemy/      # Ethereum RPC and data handling via Alchemy
+│       ├── blockchain/   # Core blockchain logic: balance fetching, transactions, etc.
+│       ├── coingecko/    # Market data integration (prices, trending tokens, categories)
+│       ├── schemas/      # Data validation schemas and type-safe configurations
+│       ├── tools/        # Utility functions and CLI command implementations
+│       └── types/        # Shared TypeScript types and interfaces
+├── .env.example          # Example environment variables
+├── package.json          # Project dependencies and scripts
+├── tsconfig.json         # TypeScript configuration
+└── README.md             # Project documentation
 ```
 
 ---
